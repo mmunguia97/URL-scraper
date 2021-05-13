@@ -1,8 +1,8 @@
 # URL-scraper
 
-A simple bash script designed filter unique URLs from a webpage.
+A simple bash script designed to filter unique URLs from a webpage.
 
-To use: `./urlScraper [URL]` where URL is in the format https://www.website.com.
+To use: `./urlScraper [URL]`.
 
 The original page HTML in `page.html` and the filtered, sorted unique paths will be saved in `paths.txt`.
 
