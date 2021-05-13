@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Fetches a web page using curl, and filters out any unique paths
+# Prints the number of unique paths if successful
+
+echo "Running" $0
+
+if [ $# -ne 1 ]
+then
+    echo "Usage: ./URL-scraper [URL]"
+    exit 1
+fi
+
+URL=$1
+curl $URL > page.html
+sed -E 's/(")|(\x27)/\n/g' page.html | grep $URL | sort -u > paths.txt
+echo "Number of paths:"
+wc -l paths.txt
+
+exit 0
