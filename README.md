@@ -1,6 +1,6 @@
 # URL-scraper
 
-A simple bash script designed to filter unique URLs from a webpage.
+A simple bash script designed to filter unique paths from a webpage.
 
 To use: `./urlScraper [URL]`.
 
